@@ -3,55 +3,55 @@ const defaultProducts = [
   {
     name: "Cuaderno diseño de Gato",
     price: 120,
-    image: "https://img.ltwebstatic.com/images3/spmp/2023/09/14/7f/16946787308826fccfaba21255965d921aacb1d381_thumbnail_720x.webp",
+    image: "img/cuaderno-gato.jpg",
     quantity: 4
   },
   {
     name: "Bolígrafos de gato",
     price: 80,
-    image: "https://img.ltwebstatic.com/images3/spmp/2024/07/14/a9/17209453727251e8321566aee8b75e7a29354abbc6_thumbnail_720x.webp",
+    image: "img/boligrafo-gato.jpg",
     quantity: 5
   },
   {
     name: "Set de papelería pata de gato",
     price: 210,
-    image: "https://dreamwithkat.de/cdn/shop/files/9-pcsset-cute-cat-paw-stationery-kawaii-essentials.webp?v=1730275056",
+    image: "img/set-paw.jpg",
     quantity: 3
   },
   {
     name: "Notas adhesivas",
     price: 45,
-    image: "https://ae01.alicdn.com/kf/S83064cea999b487baa21499c9538ca133.jpg_640x640.jpg_.webp",
+    image: "img/notas-adhesivas.jpg",
     quantity: 7
   },
   {
     name: "Resaltadores color pastel",
     price: 120,
-    image: "https://img.ltwebstatic.com/images3/spmp/2023/07/07/16887195319fda92c7e624f9feefc8d011834b985c_thumbnail_750x999.webp",
+    image: "img/marcadores-pastel.jpg",
     quantity: 5
   },
   {
     name: "Set papelería gradiente",
     price: 90,
-    image: "https://ae01.alicdn.com/kf/S7e824772872c4201aa22ee117b05365eF.jpg?width=750&height=1000&hash=1750",
+    image: "img/set-degradado.jpg",
     quantity: 5
   },
   {
     name: "Harry Cat cuaderno",
     price: 200,
-    image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-5lQU9HfLEPlrY9CQHdqLCeB2qE1XPfWK_mX5piBjSSn3bG1N",
+    image: "img/harry-cat.jpg",
     quantity: 4
   },
   {
     name: "Termo de acero inoxidable",
     price: 250,
-    image: "https://m.media-amazon.com/images/I/51ThXe+ez5L._AC_UF350,350_QL80_.jpg",
+    image: "img/termo-gato.jpg",
     quantity: 3
   },
   {
     name: "Mochila escolar de gato",
     price: 320,
-    image: "https://ae01.alicdn.com/kf/Hc4ea0e39a889453f9d79f21b11c432f1z.jpg_960x960.jpg",
+    image: "img/mochila-gato.jpg",
     quantity: 3
   }
 ];
