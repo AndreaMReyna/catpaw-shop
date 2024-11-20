@@ -1,0 +1,245 @@
+/* Definición de la paleta de colores */
+:root {
+  --coral-pink: #e4948aff;
+  --almond: #f1e3d6ff;
+  --sky-magenta: #e06bb9ff;
+  --african-violet: #b48bcdff;
+  --ultra-violet: #5e6697ff;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: 'Delius', sans-serif; /* Fuente principal */
+  margin: 0;
+  padding: 0;
+  background-color: var(--almond); /* Fondo de la página */
+}
+
+/* Estilos del contenedor del header */
+header {
+  background-color: var(--ultra-violet); /* Fondo del header */
+}
+
+.header-container {
+  display: flex; /* Usa un modelo de diseño flexible (Flexbox) */
+  justify-content: space-between; /* Espaciado entre elementos */
+  gap: 20px; /* Espaciado entre los elementos del contenedor */
+  padding: 10px;
+}
+
+.logo img,
+.title-image img {
+  height: 100px; /* Altura de las imágenes del logo y título */
+  width: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos del logo con borde redondeado */
+header .logo img {
+  width: 100px; /* Ancho fijo del logo */
+  height: 100px;
+  border-radius: 50%; /* Hacemos la imagen redonda */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+/* Estilos para la sección principal */
+main {
+  display: flex; /* Layout flexible para el main */
+  justify-content: space-between; /* Espaciado entre los contenedores de productos y formulario */
+  padding: 20px;
+}
+
+/* Estilos del contenedor de los productos */
+.products-container {
+  display: flex; /* Flexbox para disposición de los productos */
+  justify-content: space-between; /* Separación entre la lista de productos y el formulario */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilo de la lista de productos */
+.product-list {
+  width: 70%; /* Toma el 70% del ancho disponible */
+  display: grid; /* Usamos un grid para organizar los productos */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila (3 productos por fila) */
+  gap: 20px; /* Espaciado entre las tarjetas de los productos */
+}
+
+/* Estilo de cada tarjeta de producto */
+.product-card {
+  background-color: white; /* Fondo blanco para las tarjetas */
+  padding: 15px; /* Espaciado dentro de cada tarjeta */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
+  text-align: center; /* Centrar el texto dentro de cada tarjeta */
+  position: relative; /* Para colocar elementos en la parte superior derecha */
+}
+
+/* Estilo de la imagen del producto */
+.product-card img {
+  width: 100%; /* La imagen ocupa todo el ancho disponible */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+/* Estilo del nombre del producto */
+.product-card .product-name {
+  font-family: 'Delius', sans-serif; /* Usar la fuente Delius */
+  font-size: 1.2em; /* Tamaño de fuente grande */
+  margin-top: 10px; /* Separación superior */
+}
+
+/* Estilo del precio del producto */
+.product-card .product-price {
+  font-family: 'Sour Gummy', sans-serif; /* Fuente especial para el precio */
+  font-size: 1.2em; /* Tamaño de fuente para el precio */
+  color: var(--coral-pink); /* Color coral para el precio */
+  margin-top: 5px; /* Separación superior */
+}
+
+/* Estilo de la cantidad de producto */
+.product-card .product-quantity {
+  margin-top: 10px; /* Separación superior */
+}
+
+/* Estilo de la caja de entrada de la cantidad */
+.product-card .product-quantity input {
+  width: 60px; /* Ancho fijo para el input */
+  padding: 5px; /* Espaciado dentro del input */
+  margin-left: 5px; /* Separación a la izquierda */
+  border: 2px solid var(--coral-pink); /* Borde del input en color coral */
+  border-radius: 4px; /* Bordes redondeados en el input */
+}
+
+/* Estilo del botón de eliminar producto */
+.product-card .delete-btn {
+  position: absolute; /* Posicionamiento absoluto dentro de la tarjeta */
+  top: 10px; /* 10px desde la parte superior */
+  right: 10px; /* 10px desde la parte derecha */
+  background-color: var(--sky-magenta); /* Fondo del botón en color magenta */
+  color: white; /* Texto blanco */
+  border: none; /* Sin bordes */
+  border-radius: 50%; /* Botón redondo */
+  width: 30px; /* Tamaño del botón */
+  height: 30px;
+  cursor: pointer; /* Cambia el cursor a mano cuando pasas sobre el botón */
+}
+
+.product-card .delete-btn:hover {
+  background-color: var(--african-violet); /* Cambia de color cuando pasas el ratón sobre el botón */
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+  width: 25%; /* El formulario toma el 25% del ancho disponible */
+  background-color: var(--almond); /* Fondo de color almendra */
+  padding: 20px; /* Espaciado dentro del formulario */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para el formulario */
+  text-align: center; /* Centrar el contenido del formulario */
+}
+
+/* Estilos para los inputs dentro del formulario */
+.form-container input {
+  width: 80%; /* Los inputs ocupan el 80% del ancho disponible */
+  padding: 12px; /* Espaciado dentro de los inputs */
+  margin: 10px 0; /* Separación vertical entre los inputs */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 2px solid var(--coral-pink); /* Borde color coral */
+  background-color: white; /* Fondo blanco */
+  font-size: 1em; /* Tamaño de la fuente en los inputs */
+}
+
+/* Estilos para los botones del formulario */
+.form-container button {
+  width: 48%; /* Los botones ocupan el 48% del ancho disponible */
+  padding: 12px; /* Espaciado dentro de los botones */
+  margin: 10px 1%; /* Separación entre botones */
+  background-color: var(--coral-pink); /* Fondo color coral */
+  border: none; /* Sin bordes */
+  color: white; /* Texto blanco */
+  font-size: 1.1em; /* Tamaño de fuente */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano */
+  transition: all 0.3s ease; /* Efecto de transición suave */
+}
+
+.form-container button:hover {
+  background-color: var(--sky-magenta); /* Cambio de color al pasar el ratón */
+  transform: translateY(-3px); /* Desplazamiento hacia arriba del botón */
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: var(--ultra-violet); /* Fondo color morado para el pie de página */
+  color: white; /* Texto blanco */
+  padding: 20px; /* Espaciado dentro del pie de página */
+  text-align: center; /* Centrar el contenido */
+}
+
+footer .footer-container {
+  display: flex; /* Layout flexible para los elementos dentro del pie de página */
+  flex-direction: column; /* Los elementos se colocan en columna */
+  align-items: center; /* Alinea los elementos al centro */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-container img {
+  width: 70px; /* Tamaño del logo en el pie de página */
+  height: 70px;
+  border-radius: 50%; /* Logo redondo */
+  object-fit: cover; /* Ajusta la imagen para que cubra el espacio sin distorsionarse */
+  margin-bottom: 10px; /* Separación inferior */
+}
+
+footer .footer-container p {
+  margin: 5px 0; /* Separación entre los párrafos */
+}
+
+/* Media Queries para hacer el diseño responsivo */
+
+/* Para pantallas de hasta 1200px de ancho (tablets y pantallas medianas) */
+@media (max-width: 1200px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* Muestra dos productos por fila */
+  }
+
+  .form-container {
+    width: 30%; /* El formulario ocupa el 30% */
+  }
+}
+
+/* Para pantallas de hasta 768px de ancho (tablets en modo vertical) */
+@media (max-width: 768px) {
+  .products-container {
+    flex-direction: column; /* Organiza el contenido de forma vertical */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .product-list {
+    width: 100%; /* Los productos ocupan el 100% del ancho */
+    grid-template-columns: 1fr; /* Muestra un solo producto por fila */
+  }
+
+  .form-container {
+    width: 80%; /* El formulario ocupa el 80% del ancho */
+  }
+}
+
+/* Para pantallas de hasta 480px de ancho (smartphones) */
+@media (max-width: 480px) {
+  header .header-container {
+    flex-direction: column; /* Organiza el contenido en columna */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .logo img,
+  .title-image img {
+    width: 80px; /* Reduce el tamaño del logo y título */
+    height: 80px;
+  }
+
+  .form-container {
+    width: 90%; /* El formulario ocupa el 90% del ancho */
+  }
+}

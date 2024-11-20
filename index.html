@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Define la codificación de caracteres para el documento -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define la responsividad en dispositivos móviles -->
+  <title>CATPAW - Catálogo de Productos</title> <!-- Título de la página -->
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+
+  <!-- Fuentes de Google para los estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Establece la conexión con Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Establece la conexión con los archivos de fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Delius&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Importa las fuentes usadas -->
+</head>
+
+<body>
+  <!-- Cabecera de la página -->
+  <header>
+    <div class="header-container"> <!-- Contenedor principal del header -->
+      <div class="title-image"> <!-- Contenedor del título de la tienda -->
+        <img src="img/titulo.png" alt="Titulo CATPAW"> <!-- Imagen de título -->
+      </div>
+      <div class="logo"> <!-- Contenedor del logo -->
+        <img src="img/logo.jpg" alt="Logo CATPAW"> <!-- Imagen del logo -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección principal de la página -->
+  <main>
+    <div class="products-container"> <!-- Contenedor de productos y formulario -->
+      <div class="product-list" id="productList"> <!-- Contenedor donde se muestran los productos -->
+        <!-- Aquí se agregarán las tarjetas de productos mediante JS -->
+      </div>
+
+      <!-- Formulario para agregar un nuevo producto -->
+      <div class="form-container">
+        <h3>Agregar Producto</h3> <!-- Título del formulario -->
+        <form id="productForm"> <!-- Formulario para ingresar un nuevo producto -->
+          <input type="text" id="productName" placeholder="Nombre del producto" required> <!-- Campo para el nombre del producto -->
+          <input type="number" id="productPrice" placeholder="Precio del producto" required> <!-- Campo para el precio del producto -->
+          <input type="url" id="productImage" placeholder="URL de la imagen" required> <!-- Campo para la URL de la imagen -->
+          <input type="number" id="productQuantity" placeholder="Cantidad" required> <!-- Campo para la cantidad de producto -->
+          <button type="submit">Agregar</button> <!-- Botón para agregar el producto -->
+          <button type="reset">Limpiar</button> <!-- Botón para limpiar el formulario -->
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container">
+      <img src="img/logo-letra.jpg" alt="Logo con titulo CATPAW"> <!-- Logo en el pie de página -->
+      <p>2024 CATPAW, Todos los derechos reservados.</p> <!-- Derechos de autor -->
+      <p>Desarrollado por Andrea Martínez Reyna</p> <!-- Créditos del desarrollador -->
+    </div>
+  </footer>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
